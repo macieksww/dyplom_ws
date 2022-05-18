@@ -1,0 +1,1 @@
+/home/maciek/dyplom_ws/devel/.private/dyplom/share/roseus/ros/dyplom/srv/problem_gen.l

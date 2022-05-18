@@ -1,0 +1,63 @@
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:1[m[K:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K In function ‘[01m[Kvoid odomCallback(const ConstPtr&)[m[K’:
+[01m[K/opt/ros/melodic/include/ros/console.h:348:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:351:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:70:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   [01;36m[KR[m[KOS_INFO("Path elements: %f",globalPathElements);
+   [01;36m[K^[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:87:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kactionlib[m[K’ has not been declared
+   [01;31m[Kactionlib[m[K::SimpleActionServer<dyplom_msgs::goalAction> Server;
+   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:87:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kdyplom_msgs[m[K’ has not been declared
+   actionlib::SimpleActionServer<[01;31m[Kdyplom_msgs[m[K::goalAction> Server;
+                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:87:58:[m[K [01;31m[Kerror: [m[K‘[01m[KServer[m[K’ was not declared in this scope
+   actionlib::SimpleActionServer<dyplom_msgs::goalAction> [01;31m[KServer[m[K;
+                                                          [01;31m[K^~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:87:58:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/opt/ros/melodic/include/costmap_2d/costmap_2d_ros.h:49:0[m[K,
+                 from [01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:11[m[K:
+[01m[K/opt/ros/melodic/include/dynamic_reconfigure/server.h:64:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kdynamic_reconfigure::Server[m[K’
+ class [01;36m[KServer[m[K
+       [01;36m[K^~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:88:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KactionServer[m[K’
+   Server [01;31m[KactionServer[m[K(node, "destination", boost::bind(&execute, _1, &server), false);
+          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:89:3:[m[K [01;31m[Kerror: [m[K‘[01m[KactionServer[m[K’ was not declared in this scope
+   [01;31m[KactionServer[m[K.start();
+   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:89:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KactionResult[m[K’
+   [01;36m[KactionServer[m[K.start();
+   [01;36m[K^~~~~~~~~~~~[m[K
+   [32m[KactionResult[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:112:7:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kif[m[K’
+       [01;31m[Kif[m[K (globalPlanner.makePlan(currentPose, goalPose, globalPlan) == true){
+       [01;31m[K^~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:133:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+       [01;31m[Kelse[m[K{
+       [01;31m[K^~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K At global scope:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:164:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+   [01;31m[Kreturn[m[K 0;
+   [01;31m[K^~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:165:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/move.dir/scripts/move.cpp.o] Error 1
+make[1]: *** [CMakeFiles/move.dir/all] Error 2
+make: *** [all] Error 2

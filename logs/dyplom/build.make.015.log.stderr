@@ -1,0 +1,7 @@
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kdyplom_msgs/goalAction.h: No such file or directory
+ #include [01;31m[K<dyplom_msgs/goalAction.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/move.dir/scripts/move.cpp.o] Error 1
+make[1]: *** [CMakeFiles/move.dir/all] Error 2
+make: *** [all] Error 2

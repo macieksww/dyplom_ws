@@ -1,0 +1,10 @@
+#goal
+float64 x
+float64 y
+---
+#result
+string status
+---
+#feedback
+float64 a
+float64 b

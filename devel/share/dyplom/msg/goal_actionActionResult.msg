@@ -1,0 +1,1 @@
+/home/maciek/dyplom_ws/devel/.private/dyplom/share/dyplom/msg/goal_actionActionResult.msg

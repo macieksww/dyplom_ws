@@ -1,0 +1,8 @@
+prefix=/home/maciek/dyplom_ws/devel/.private/dyplom
+
+Name: dyplom
+Description: Description of dyplom
+Version: 0.0.0
+Cflags: -I/home/maciek/dyplom_ws/devel/.private/dyplom/include
+Libs: -L${prefix}/lib -ldyplom
+Requires: geometry_msgs nav_msgs rospy std_msgs actionlib_msgs message_runtime message_runtime

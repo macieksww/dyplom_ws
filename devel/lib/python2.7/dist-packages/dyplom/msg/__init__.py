@@ -1,0 +1,1 @@
+/home/maciek/dyplom_ws/devel/.private/dyplom/lib/python2.7/dist-packages/dyplom/msg/__init__.py

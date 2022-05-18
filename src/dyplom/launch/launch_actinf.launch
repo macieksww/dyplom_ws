@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="action_interface_manager" pkg="dyplom" type="ActionInterfaceManager.py" output="screen">
+    <rosparam file="$(find dyplom)/config/actions_config.yaml" command="load" ns="actions"/>
+  </node>
+</launch>

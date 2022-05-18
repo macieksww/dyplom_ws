@@ -1,0 +1,112 @@
+; Auto-generated. Do not edit!
+
+
+(cl:in-package dyplom-msg)
+
+
+;//! \htmlinclude goal_actionFeedback.msg.html
+
+(cl:defclass <goal_actionFeedback> (roslisp-msg-protocol:ros-message)
+  ((a
+    :reader a
+    :initarg :a
+    :type cl:float
+    :initform 0.0)
+   (b
+    :reader b
+    :initarg :b
+    :type cl:float
+    :initform 0.0))
+)
+
+(cl:defclass goal_actionFeedback (<goal_actionFeedback>)
+  ())
+
+(cl:defmethod cl:initialize-instance :after ((m <goal_actionFeedback>) cl:&rest args)
+  (cl:declare (cl:ignorable args))
+  (cl:unless (cl:typep m 'goal_actionFeedback)
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name dyplom-msg:<goal_actionFeedback> is deprecated: use dyplom-msg:goal_actionFeedback instead.")))
+
+(cl:ensure-generic-function 'a-val :lambda-list '(m))
+(cl:defmethod a-val ((m <goal_actionFeedback>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader dyplom-msg:a-val is deprecated.  Use dyplom-msg:a instead.")
+  (a m))
+
+(cl:ensure-generic-function 'b-val :lambda-list '(m))
+(cl:defmethod b-val ((m <goal_actionFeedback>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader dyplom-msg:b-val is deprecated.  Use dyplom-msg:b instead.")
+  (b m))
+(cl:defmethod roslisp-msg-protocol:serialize ((msg <goal_actionFeedback>) ostream)
+  "Serializes a message object of type '<goal_actionFeedback>"
+  (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'a))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
+  (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'b))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) bits) ostream))
+)
+(cl:defmethod roslisp-msg-protocol:deserialize ((msg <goal_actionFeedback>) istream)
+  "Deserializes a message object of type '<goal_actionFeedback>"
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'a) (roslisp-utils:decode-double-float-bits bits)))
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) bits) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'b) (roslisp-utils:decode-double-float-bits bits)))
+  msg
+)
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<goal_actionFeedback>)))
+  "Returns string type for a message object of type '<goal_actionFeedback>"
+  "dyplom/goal_actionFeedback")
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'goal_actionFeedback)))
+  "Returns string type for a message object of type 'goal_actionFeedback"
+  "dyplom/goal_actionFeedback")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<goal_actionFeedback>)))
+  "Returns md5sum for a message object of type '<goal_actionFeedback>"
+  "6f4f9f1b571de73ae8592a1438fd23f3")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'goal_actionFeedback)))
+  "Returns md5sum for a message object of type 'goal_actionFeedback"
+  "6f4f9f1b571de73ae8592a1438fd23f3")
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<goal_actionFeedback>)))
+  "Returns full string definition for message of type '<goal_actionFeedback>"
+  (cl:format cl:nil "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======~%#feedback~%float64 a~%float64 b~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'goal_actionFeedback)))
+  "Returns full string definition for message of type 'goal_actionFeedback"
+  (cl:format cl:nil "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======~%#feedback~%float64 a~%float64 b~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:serialization-length ((msg <goal_actionFeedback>))
+  (cl:+ 0
+     8
+     8
+))
+(cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <goal_actionFeedback>))
+  "Converts a ROS message object to a list"
+  (cl:list 'goal_actionFeedback
+    (cl:cons ':a (a msg))
+    (cl:cons ':b (b msg))
+))

@@ -1,0 +1,77 @@
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:1[m[K:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K In function ‘[01m[Kvoid odomCallback(const ConstPtr&)[m[K’:
+[01m[K/opt/ros/melodic/include/ros/console.h:348:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:351:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:71:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   [01;36m[KR[m[KOS_INFO("Path elements: %f",globalPathElements);
+   [01;36m[K^[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:88:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kactionlib::SimpleActionServer<dyplom::goalAction_<std::allocator<void> > >::SimpleActionServer()[m[K’
+   actionlib::SimpleActionServer<dyplom::goalAction> [01;31m[KServer[m[K;
+                                                     [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server.h:256:0[m[K,
+                 from [01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:18[m[K:
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:134:1:[m[K [01;36m[Knote: [m[Kcandidate: actionlib::SimpleActionServer<ActionSpec>::SimpleActionServer(ros::NodeHandle, std::__cxx11::string, actionlib::SimpleActionServer<ActionSpec>::ExecuteCallback) [with ActionSpec = dyplom::goalAction_<std::allocator<void> >; std::__cxx11::string = std::__cxx11::basic_string<char>; actionlib::SimpleActionServer<ActionSpec>::ExecuteCallback = boost::function<void(const boost::shared_ptr<const dyplom::goalGoal_<std::allocator<void> > >&)>; typename ActionSpec::_action_goal_type::_goal_type = dyplom::goalGoal_<std::allocator<void> >]
+ [01;36m[KSimpleActionServer<ActionSpec>[m[K::SimpleActionServer(ros::NodeHandle n, std::string name,
+ [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:134:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:117:1:[m[K [01;36m[Knote: [m[Kcandidate: actionlib::SimpleActionServer<ActionSpec>::SimpleActionServer(ros::NodeHandle, std::__cxx11::string, bool) [with ActionSpec = dyplom::goalAction_<std::allocator<void> >; std::__cxx11::string = std::__cxx11::basic_string<char>]
+ [01;36m[KSimpleActionServer<ActionSpec>[m[K::SimpleActionServer(ros::NodeHandle n, std::string name,
+ [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:117:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:99:1:[m[K [01;36m[Knote: [m[Kcandidate: actionlib::SimpleActionServer<ActionSpec>::SimpleActionServer(ros::NodeHandle, std::__cxx11::string, actionlib::SimpleActionServer<ActionSpec>::ExecuteCallback, bool) [with ActionSpec = dyplom::goalAction_<std::allocator<void> >; std::__cxx11::string = std::__cxx11::basic_string<char>; actionlib::SimpleActionServer<ActionSpec>::ExecuteCallback = boost::function<void(const boost::shared_ptr<const dyplom::goalGoal_<std::allocator<void> > >&)>; typename ActionSpec::_action_goal_type::_goal_type = dyplom::goalGoal_<std::allocator<void> >]
+ [01;36m[KSimpleActionServer<ActionSpec>[m[K::SimpleActionServer(ros::NodeHandle n, std::string name,
+ [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:99:1:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 0 provided
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:81:1:[m[K [01;36m[Knote: [m[Kcandidate: actionlib::SimpleActionServer<ActionSpec>::SimpleActionServer(std::__cxx11::string, actionlib::SimpleActionServer<ActionSpec>::ExecuteCallback) [with ActionSpec = dyplom::goalAction_<std::allocator<void> >; std::__cxx11::string = std::__cxx11::basic_string<char>; actionlib::SimpleActionServer<ActionSpec>::ExecuteCallback = boost::function<void(const boost::shared_ptr<const dyplom::goalGoal_<std::allocator<void> > >&)>; typename ActionSpec::_action_goal_type::_goal_type = dyplom::goalGoal_<std::allocator<void> >]
+ [01;36m[KSimpleActionServer<ActionSpec>[m[K::SimpleActionServer(std::string name,
+ [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:81:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:65:1:[m[K [01;36m[Knote: [m[Kcandidate: actionlib::SimpleActionServer<ActionSpec>::SimpleActionServer(std::__cxx11::string, bool) [with ActionSpec = dyplom::goalAction_<std::allocator<void> >; std::__cxx11::string = std::__cxx11::basic_string<char>]
+ [01;36m[KSimpleActionServer<ActionSpec>[m[K::SimpleActionServer(std::string name, bool auto_start)
+ [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:65:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:47:1:[m[K [01;36m[Knote: [m[Kcandidate: actionlib::SimpleActionServer<ActionSpec>::SimpleActionServer(std::__cxx11::string, actionlib::SimpleActionServer<ActionSpec>::ExecuteCallback, bool) [with ActionSpec = dyplom::goalAction_<std::allocator<void> >; std::__cxx11::string = std::__cxx11::basic_string<char>; actionlib::SimpleActionServer<ActionSpec>::ExecuteCallback = boost::function<void(const boost::shared_ptr<const dyplom::goalGoal_<std::allocator<void> > >&)>; typename ActionSpec::_action_goal_type::_goal_type = dyplom::goalGoal_<std::allocator<void> >]
+ [01;36m[KSimpleActionServer<ActionSpec>[m[K::SimpleActionServer(std::string name,
+ [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/actionlib/server/simple_action_server_imp.h:47:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:89:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KactionServer[m[K’
+   Server [01;31m[KactionServer[m[K(node, "destination", boost::bind(&execute, _1, &server), false);
+          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:90:3:[m[K [01;31m[Kerror: [m[K‘[01m[KactionServer[m[K’ was not declared in this scope
+   [01;31m[KactionServer[m[K.start();
+   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:90:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KactionResult[m[K’
+   [01;36m[KactionServer[m[K.start();
+   [01;36m[K^~~~~~~~~~~~[m[K
+   [32m[KactionResult[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:113:7:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kif[m[K’
+       [01;31m[Kif[m[K (globalPlanner.makePlan(currentPose, goalPose, globalPlan) == true){
+       [01;31m[K^~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:134:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+       [01;31m[Kelse[m[K{
+       [01;31m[K^~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K At global scope:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:165:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+   [01;31m[Kreturn[m[K 0;
+   [01;31m[K^~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:166:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/move.dir/scripts/move.cpp.o] Error 1
+make[1]: *** [CMakeFiles/move.dir/all] Error 2
+make: *** [all] Error 2

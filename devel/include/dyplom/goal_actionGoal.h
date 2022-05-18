@@ -1,0 +1,1 @@
+/home/maciek/dyplom_ws/devel/.private/dyplom/include/dyplom/goal_actionGoal.h

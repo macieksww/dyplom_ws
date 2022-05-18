@@ -1,0 +1,1 @@
+/home/maciek/dyplom_ws/devel/.private/dyplom/share/dyplom/cmake/dyplomConfig-version.cmake

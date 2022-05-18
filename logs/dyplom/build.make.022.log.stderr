@@ -1,0 +1,64 @@
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:1[m[K:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K In function ‘[01m[Kvoid odomCallback(const ConstPtr&)[m[K’:
+[01m[K/opt/ros/melodic/include/ros/console.h:348:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;35m[K)[m[K
+                                                                                                                                                                                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:351:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:72:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   [01;36m[KR[m[KOS_INFO("Path elements: %f",globalPathElements);
+   [01;36m[K^[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K At global scope:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:79:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kchores[m[K’ does not name a type; did you mean ‘[01m[Kchown[m[K’?
+ void actionCallback(const [01;31m[Kchores[m[K::DoDishesGoalConstPtr& goal, Server* as)
+                           [01;31m[K^~~~~~[m[K
+                           [32m[Kchown[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:79:55:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+ void actionCallback(const chores::DoDishesGoalConstPtr[01;31m[K&[m[K goal, Server* as)
+                                                       [01;31m[K^[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:79:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:79:57:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kgoal[m[K’
+ void actionCallback(const chores::DoDishesGoalConstPtr& [01;31m[Kgoal[m[K, Server* as)
+                                                         [01;31m[K^~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:97:50:[m[K [01;31m[Kerror: [m[K‘[01m[KactionCallback[m[K’ was not declared in this scope
+   Server sever(node, "destination", boost::bind(&[01;31m[KactionCallback[m[K, _1, &server), false);
+                                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:97:50:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KactionFeedback[m[K’
+   Server sever(node, "destination", boost::bind(&[01;36m[KactionCallback[m[K, _1, &server), false);
+                                                  [01;36m[K^~~~~~~~~~~~~~[m[K
+                                                  [32m[KactionFeedback[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:97:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kserver[m[K’ was not declared in this scope
+   Server sever(node, "destination", boost::bind(&actionCallback, _1, &[01;31m[Kserver[m[K), false);
+                                                                       [01;31m[K^~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:97:71:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksever[m[K’
+   Server sever(node, "destination", boost::bind(&actionCallback, _1, &[01;36m[Kserver[m[K), false);
+                                                                       [01;36m[K^~~~~~[m[K
+                                                                       [32m[Ksever[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:121:7:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kif[m[K’
+       [01;31m[Kif[m[K (globalPlanner.makePlan(currentPose, goalPose, globalPlan) == true){
+       [01;31m[K^~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:142:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+       [01;31m[Kelse[m[K{
+       [01;31m[K^~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:[m[K At global scope:
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:173:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+   [01;31m[Kreturn[m[K 0;
+   [01;31m[K^~~~~~[m[K
+[01m[K/home/maciek/dyplom_ws/src/dyplom/scripts/move.cpp:174:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/move.dir/scripts/move.cpp.o] Error 1
+make[1]: *** [CMakeFiles/move.dir/all] Error 2
+make: *** [all] Error 2
